@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: kcl.ac.uk.WeebADoodle
+Bundle-ManifestVersion: 2
+Bundle-Name: kcl.ac.uk.WeebADoodle
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: kcl.ac.uk.WeebADoodle; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: kcl.ac.uk.serializer,
+ kcl.ac.uk.generator,
+ kcl.ac.uk.weebADoodle.util,
+ kcl.ac.uk.parser.antlr,
+ kcl.ac.uk.scoping,
+ kcl.ac.uk,
+ kcl.ac.uk.validation,
+ kcl.ac.uk.parser.antlr.internal,
+ kcl.ac.uk.services,
+ kcl.ac.uk.weebADoodle,
+ kcl.ac.uk.weebADoodle.impl
+Import-Package: org.apache.log4j

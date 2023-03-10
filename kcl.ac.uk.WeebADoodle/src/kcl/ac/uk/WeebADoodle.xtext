@@ -1,0 +1,9 @@
+grammar kcl.ac.uk.WeebADoodle with org.eclipse.xtext.common.Terminals
+
+generate weebADoodle "http://www.ac.kcl/uk/WeebADoodle"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
